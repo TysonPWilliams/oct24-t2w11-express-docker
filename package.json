@@ -1,0 +1,25 @@
+{
+  "name": "oct24-t2w11-express-docker",
+  "version": "1.0.0",
+  "description": "Express app and MongoDB database all containerised",
+  "main": "index.js",
+  "scripts": {
+    "start" : "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TysonPWilliams/oct24-t2w11-express-docker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TysonPWilliams/oct24-t2w11-express-docker/issues"
+  },
+  "homepage": "https://github.com/TysonPWilliams/oct24-t2w11-express-docker#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.0"
+  }
+}
