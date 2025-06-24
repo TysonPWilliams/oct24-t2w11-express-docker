@@ -1,11 +1,12 @@
 name: SuperCoolComposeStack
 services:
   api:
-    image: mysupercoolapp:somefancytag
+    image: mysupercoolapp:latest-${NODE_ENV}
     build: .
     env_file: .env
     environment:
-      - DATABASE_URL=mongodb://mongo:27017/mycoolappdatabase
+    # Interpolated variables can have a fallback value using ":-"
+      - DATABASE_URL=mongodb://mongo:27017/mycoolappdatabase-${NODE_ENV:-defaultenvironment}
     ports:
       - 5432:3001
       - 65535:3001
